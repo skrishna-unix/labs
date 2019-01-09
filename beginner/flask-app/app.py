@@ -24,5 +24,9 @@ def index():
     url = random.choice(images)
     return render_template('index.html', url=url)
 
+@app.route('/a')
+def hello_world:
+    return 'Hey, we have Flask in a Docker container!'
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
