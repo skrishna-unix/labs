@@ -21,7 +21,7 @@ images = [
 
 
 @app.route('/')
-def hello_world:
+def hello_world():
     return 'Hey, we have Flask in a Docker container!'
 
 if __name__ == "__main__":
